@@ -28,12 +28,12 @@ class InsertionSortTest {
     @Test
     @DisplayName("Sort a list of Strings")
     void sortStrings() {
-        List<String> integers = new ArrayList<>(List.of("banana", "apple", "apple", "cherry", "banana"));
-        List<String> sortedIntegers = List.of("apple", "apple", "banana", "banana", "cherry");
+        List<String> strings = new ArrayList<>(List.of("banana", "apple", "apple", "cherry", "banana"));
+        List<String> sortedStrings = List.of("apple", "apple", "banana", "banana", "cherry");
 
-        InsertionSort.sort(integers);
+        InsertionSort.sort(strings);
 
-        assertEquals(sortedIntegers, integers);
+        assertEquals(sortedStrings, strings);
     }
 
     @Test
