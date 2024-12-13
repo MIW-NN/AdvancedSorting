@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @author Vincent Velthuizen
  * Test insertion sort
  */
-class MergeSortTest {
+class QuickSortTest {
 
     @Test
     @DisplayName("Sort a list of (consecutive, positive) Integers")
@@ -20,7 +20,7 @@ class MergeSortTest {
         List<Integer> integers = new ArrayList<>(List.of(8, 4, 5, 3, 7, 2, 6, 1));
         List<Integer> sortedIntegers = List.of(1, 2, 3, 4, 5, 6, 7, 8);
 
-        MergeSort.sort(integers);
+        QuickSort.sort(integers);
 
         assertEquals(sortedIntegers, integers);
     }
@@ -31,7 +31,7 @@ class MergeSortTest {
         List<String> strings = new ArrayList<>(List.of("banana", "apple", "apple", "cherry", "banana"));
         List<String> sortedString = List.of("apple", "apple", "banana", "banana", "cherry");
 
-        MergeSort.sort(strings);
+        QuickSort.sort(strings);
 
         assertEquals(sortedString, strings);
     }
@@ -42,7 +42,7 @@ class MergeSortTest {
         List<Integer> integers = new ArrayList<>(List.of(3, -1, 8, 0, -5, 8, 7, -3));
         List<Integer> sortedIntegers = List.of(-5, -3, -1, 0, 3, 7, 8, 8);
 
-        MergeSort.sort(integers);
+        QuickSort.sort(integers);
 
         assertEquals(sortedIntegers, integers);
     }

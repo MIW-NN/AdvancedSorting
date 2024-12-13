@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class MergeSort {
     public static <L extends Comparable<? super L>> void sort(List<L> list) {
-        mergeSort(list, false);
+        sort(list, false);
     }
 
     public static <L extends Comparable<? super L>> void sort(List<L> list, boolean debug) {
