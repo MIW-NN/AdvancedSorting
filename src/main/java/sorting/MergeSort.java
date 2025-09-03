@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author Vincent Velthuizen
- * Sort any list using merge sort
+ * Sorts any list using merge sort
  */
 public class MergeSort {
     public static <L extends Comparable<? super L>> void sort(List<L> list) {

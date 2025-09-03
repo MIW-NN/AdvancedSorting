@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author Vincent Velthuizen
- * Sort any list using insertion sort
+ * Sorts any list using insertion sort
  */
 public class InsertionSort {
 
@@ -28,7 +28,9 @@ public class InsertionSort {
                 }
             }
             if (debug) {
-                System.out.println("state: " + list.subList(0, itemBeingSorted + 1) + " " + list.subList(itemBeingSorted + 1, list.size()));
+                System.out.printf("state: %s %s\n",
+                        list.subList(0, itemBeingSorted + 1),
+                        list.subList(itemBeingSorted + 1, list.size()));
             }
         }
     }
